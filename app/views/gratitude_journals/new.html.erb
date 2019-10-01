@@ -1,6 +1,6 @@
-<h1>WellBee 🐝</h1>
+<h1><%= link_to 'WellBee 🐝', users_path %></h1>
 <h2>New Gratitude Journal</h2>
-<ul class="navigation">
+<ul class="navigation" style="margin-top: -8.2rem">
   <li><%= link_to 'Back', user_path(@user) %></li>
 </ul>
 <%= render 'form', gratitude_journal: @gratitude_journal %>

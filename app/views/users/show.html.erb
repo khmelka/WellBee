@@ -1,10 +1,10 @@
-<h1>WellBee 🐝</h1>
+<h1><%= link_to 'WellBee 🐝', users_path %></h1>
 
 <p id="notice"><%= notice %></p>
 <h2>
     Welcome, <%= @user.first_name.capitalize %>!
 </h2>
-<ul class="navigation">
+<ul class="navigation" style="margin-top: -6.7rem">
   <li><%= link_to 'Create a Task', new_user_todo_list_path(@user) %></li>
   <li><%= link_to 'Express Gratitude', new_user_gratitude_journal_path(@user) %></li>
   <li><%= link_to 'Healthy Recipes', user_recipes_path(@user) %></li>

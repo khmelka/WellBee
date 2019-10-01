@@ -20,8 +20,10 @@ body {
 
    h1 {
       font-family: 'Merienda One', cursive;
-      margin:  0 35px 0 35px;
-      color: rgb(255, 217, 0,); 
+      margin:  0 35px 10px 35px;
+      color: rgb(255, 217, 0,);
+      margin-top: 1.3rem; 
+      text-decoration: none;
    }
 
    h2 {
@@ -29,6 +31,7 @@ body {
       // color: rgb(255, 217, 0); 
       margin: 0 35px 0 35px;
       font-size: 25px;
+      width: 10rem;
    }
    form {
       // padding: 10px;
@@ -39,6 +42,8 @@ body {
       background: darken(rgba(255, 230, 0, 0.774), 2%);
       //position: relative;
       top:-150px;
+      padding: 2rem;
+      margin-top: 5rem;
 
    }
    .button {
@@ -78,8 +83,9 @@ body {
 .navigation {
   font-family: 'Merienda One', cursive;
   list-style: none;
-  margin: -47px 35px 0px 35px;
-  
+  width: 42rem;
+  float: right;
+  // margin-top: -4.5rem;
   background: bg-transparent;
   
   display: -webkit-box;
@@ -145,17 +151,19 @@ body {
    flex-flow: row wrap;
    justify-content: space-around;
  }
+ 
  a {
-  color: rgb(0, 0, 0);
-
+  color: #ffd900;
+  text-decoration: unset;
  }
+
  .flex-item-gratitude {
   
-   background: darken(rgba(255, 217, 0, 0.733), 2%);
+   background: darken(rgba(128, 84, 3, 0.733), 2%);
    padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
+   width: 200px;
+   height: 150px;
+   margin-top: 10px;
    overflow: hidden;
    line-height: 1.6;
    color: rgb(0, 0, 0);
