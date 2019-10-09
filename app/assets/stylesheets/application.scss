@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url("https://img4.goodfon.com/wallpaper/nbig/5/1f/zakat-oduvanchik-priroda.jpg");
+    background-image: url("https://ak3.picdn.net/shutterstock/videos/7707313/thumb/1.jpg");
     // background-image: url("https://stmed.net/sites/default/files/blur-wallpapers-25172-4864287.jpg");
     // background-image: url("https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80");
     // background-image: url("https://image.freepik.com/free-vector/orange-abstract-hexagonal-honey-comb-background_1164-1261.jpg");
@@ -19,19 +19,19 @@ body {
 }
 
    h1 {
-      font-family: 'Merienda One', cursive;
+      // font-family: 'Merienda One', cursive;
       margin:  0 35px 10px 35px;
-      color: rgb(255, 217, 0,);
+      color: rgb(0, 0, 0);
       margin-top: 1.3rem; 
       text-decoration: none;
    }
 
    h2 {
-      font-family: 'Merienda One', cursive; 
+      // font-family: 'Merienda One', cursive; 
       // color: rgb(255, 217, 0); 
       margin: 0 35px 0 35px;
       font-size: 25px;
-      width: 10rem;
+      width: 14rem;
    }
    form {
       // padding: 10px;
@@ -81,7 +81,7 @@ body {
     }
 
 .navigation {
-  font-family: 'Merienda One', cursive;
+  // font-family: 'Merienda One', cursive;
   list-style: none;
   width: 42rem;
   float: right;
@@ -163,7 +163,7 @@ body {
    padding: 5px;
    width: 200px;
    height: 150px;
-   margin-top: 10px;
+   margin-top: 4.5rem;
    overflow: hidden;
    line-height: 1.6;
    color: rgb(0, 0, 0);
@@ -175,11 +175,11 @@ body {
   
  .flex-item-todo {
   
-  background: darken(rgba(221, 115, 73, 0.678), 2%);
+  background: darken(rgba(221, 115, 73, 0.808), 2%);
   padding: 5px;
   width: 200px;
   height: 150px;
-  margin-top: 10px;
+  margin-top: 4.5rem;
   
   line-height: 1.6;
   color: rgb(0, 0, 0);
@@ -187,6 +187,7 @@ body {
   font-size: 1em;
   text-align: left;
   border-radius: 1em;
+  display: table;
 }
 
 .flex-item-todo-show {
@@ -210,7 +211,7 @@ body {
   background: darken(rgba(248, 141, 18, 0.774), 2%);
    padding: 5px;
    width: auto;
-   max-width: 50%;
+  //  max-width: 50%;
    height: auto;
    margin: auto;
    overflow: hidden;
@@ -221,18 +222,19 @@ body {
    text-align: center;
    border-radius: 1em;
    flex-wrap: nowrap;
-  
+   margin-right: 2.5rem;
+
 }
 
 .flex-item-rec {
   background: darken(rgba(255, 230, 0, 0.774), 2%);
-   padding: 5px;
+   padding: 2rem;
    width: auto;
-   max-width: 50%;
-   height: auto;
-   margin: auto;
+  //  max-width: 50%;
+  //  height: auto;
+   margin: 0;
    overflow: hidden;
-   line-height: 3;
+   line-height: 2;
    color: rgb(0, 0, 0);
    font-weight: bold;
    font-size: 1em;
@@ -243,22 +245,40 @@ body {
    padding: 4;
    margin: 4;
    list-style: none;
+   margin-right: 2.5rem;
    }
 
 
 
 .quotes{
-  font-family: 'Merienda One', cursive;
+  // font-family: 'Merienda One', cursive;
   font-size: 20px;
-  color:rgba(59, 18, 2, 0.678);
+  margin-top: 2.4rem;
+  // color:rgba(59, 18, 2, 0.678);
 }
 
 .author{
-  font-family: 'Merienda One', cursive;
+  // font-family: 'Merienda One', cursive;
   font-size: 20px;
-  color: rgba(231, 132, 19, 0.774);
+  color: rgba(189, 109, 17, 0.774);
 }
 
-mark{
-  background-color: darken(rgba(231, 132, 19, 0.774), 2%);
+
+//edit/delete icons
+.delete{
+  position: sticky;
+  top: 100rem;
+  margin-bottom: 0;
+}
+
+.intro-container{
+  background-color: rgba(238, 232, 225, 0.548);
+    width: 40rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.intro{
+  padding: 2rem;
 }
