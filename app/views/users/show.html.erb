@@ -4,25 +4,43 @@
 <h2>
     Welcome, <%= @user.first_name.capitalize %>!
 </h2>
-<ul class="navigation">
+<ul class="navigation" style="margin-top: -6.7rem">
   <li><%= link_to 'Create a Task', new_user_todo_list_path(@user) %></li>
   <li><%= link_to 'Express Gratitude', new_user_gratitude_journal_path(@user) %></li>
   <li><%= link_to 'Healthy Recipes', user_recipes_path(@user) %></li>
   <li><%= link_to 'Inspirational Quotes', user_quotes_path(@user) %></li>
-  <li><%= link_to 'Edit', edit_user_path(@user) %></li>
+  <li><%= link_to 'Edit User', edit_user_path(@user) %></li>
   <li><%= link_to 'Back', users_path %></li>
 </ul>
 
 <ul class="flex-container">
     <% @user.gratitude_journals.reverse.each do |gratitude_journal| %>
-    <li class="flex-item-gratitude"><%= link_to gratitude_journal.title, user_gratitude_journal_path(@user, gratitude_journal) %><%=": #{gratitude_journal.content}" %></li>
+    <li class="flex-item-gratitude">
+    <p>Gratitude Journal</p>
+    <%="Title: #{gratitude_journal.title}" %>
+    <br>
+    <%="Entry: #{gratitude_journal.content}" %>
+    <br>
+    <p class="delete"><%= link_to '✏️', edit_user_gratitude_journal_path(@user, gratitude_journal) %>
+    <%= link_to '❌', user_gratitude_journal_url(@user, gratitude_journal), method: :delete, data: { confirm: 'Are you sure?' } %></p>
     <%end%>
 </ul>
-<ul class="flex-container">
+
+<ul class="flex-container"> 
     <% @user.todo_lists.each do |todo_list| %>
-    <li class="flex-item-todo">Task: <%=link_to todo_list.task_name, user_todo_list_path(@user, todo_list)%>
+       
+
+    <li class="flex-item-todo">
+    <p>ToDo </p>
+    <%="Task: #{todo_list.task_name}"%>
+    <br>
+    Content: <%= todo_list.task_content %>
     <br>
     Due date: <%= todo_list.due_date %> 
+    <br>
+    <br>
+    <p class="delete"><%= link_to '✏️', edit_user_todo_list_path(@user, todo_list) %>
+    <%= link_to '❌', user_todo_list_url(@user, todo_list), method: :delete, data: { confirm: 'Are you sure?' } %></p>
     </li>
     <%end%>
 </ul>

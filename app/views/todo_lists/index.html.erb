@@ -11,7 +11,8 @@
   <ul class="flex-container">
       <% @todo_lists.each do |todo_list| %>
       <li class="flex-item-todo">Task: <%=link_to todo_list.task_name, user_todo_list_path(params[:user_id], todo_list)%>
-      Due date: <%= todo_list.due_date %> 
+      Due date: <%= todo_list.due_date %>
+
       <%= link_to 'Show', user_todo_list_path(params[:user_id], todo_list) %></td>
       <%= link_to 'Edit', edit_user_todo_list_path(params[:user_id], todo_list) %>
       </li>

@@ -1,7 +1,8 @@
 <h1>WellBee 🐝</h1>
 <h2>Editing Gratitude Journal</h2>
-
+<ul class="navigation" style="margin-top: -7.8rem">
+  <li><%= link_to 'Back', user_path(params[:user_id]) %></li>
+</ul>
 <%= render 'form', gratitude_journal: @gratitude_journal %>
 
 
-<%= link_to 'Back', user_path(params[:user_id]) %>
