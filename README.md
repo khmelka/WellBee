@@ -1,6 +1,6 @@
 # README
 WellBee!🐝
-To visit this project go to https://damp-crag-31798.herokuapp.com/users
+To visit this project go to https://floating-ocean-14783.herokuapp.com/users
 
 WellBee makes it easy to improve a user's well being. Users can track their tasks, express gratitude, share healthy recipes and favorite quotes. Signup is simple and easy.
 
